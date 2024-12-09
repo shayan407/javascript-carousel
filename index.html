@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-[#f2f2f2] flex flex-col items-center justify-center h-[100vh] overflow-hidden m-0 ">
+    <h1 class="text-center text-3xl font-bold text-purple-900 mb-10">
+      Carousel
+    </h1>
+    <div class="cards-container relative h-[200px] w-[300px] max-w-[100%] md:w-[500px] md:h-[300px] lg:w-[600px] lg:h-[350px] flex justify-center items-center" id="cards-container">
+    </div>
+    <div class="buttons flex justify-center items-center mt-5 gap-3">
+      <button
+        id="prev"
+        class="fas fa-arrow-left transform px-2 py-1 bg-blue-700 text-white rounded-[4px] active:scale-95"
+      ></button>
+      <p id="current-card"></p>
+      <button
+        id="next"
+        class="fas fa-arrow-right transform px-2 py-1 bg-blue-700 text-white rounded-[4px] active:scale-95 " 
+      ></button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
